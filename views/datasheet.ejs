@@ -1,0 +1,18 @@
+<%- include('partials/header') %>
+
+<h2 class="mb-3">Node Import CSV File to MySQL database</h2>
+<form action="/import-csv" method="post" enctype="multipart/form-data">
+  <div class="mb-3">
+    <input
+      type="file"
+      class="form-control"
+      name="import-csv"
+      accept=".csv"
+    />
+  </div>
+  <div class="d-grid">
+    <input type="submit" class="btn btn-dark" value="Store File" />
+  </div>
+</form>
+
+<%- include('partials/footer') %>
